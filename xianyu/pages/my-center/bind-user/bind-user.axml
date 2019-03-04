@@ -1,0 +1,14 @@
+<view class="bind-user">
+    <form @submit="formSubmit" @reset="formReset">
+        <view class="input-phone">
+            <input name="input" placeholder="请输入手机号" />
+            <view class="get-code">获取验证码</view>
+        </view>
+        <view class="input-code">
+            <input name="input" placeholder="请输入验证码" />
+        </view>
+        <view class="btn-area">
+            <button class="submit-btn" form-type="submit">确认绑定</button>
+        </view>
+    </form>
+</view>

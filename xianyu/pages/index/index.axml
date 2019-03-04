@@ -1,0 +1,35 @@
+<view class="index">
+  <view style="height:140rpx">
+
+  </view>
+  <view class="search-fixed">
+    <view class="search-area">
+      <view class="city-position" onTap="changeCity">{{curCity}}</view>
+      <view class='search' onTap="toSearchPage">
+        <image src="/images/fdj@2x.png" />
+        搜索你想住的区域或者小区</view>
+    </view>
+  </view>
+  <view class="house-icon">
+    <view a:for="{{iconList}}" onTap="tohouseList" data-obj="{{item.val}}">
+      <image :src="item.picUrl" class="house-icon-img" />
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+  <view class="lookHouse">
+    <view class="lhlist" a:for="{{lookHouseList}}" onTap="tohouseList" data-obj="{{item.val}}">
+      <image src="{{item.picUrl}}" />
+      <!-- <view>
+                {{item.text}}
+                <view class="tips">{{item.tips}}</view>
+             </view> -->
+    </view>
+  </view>
+  <view class="houseData">
+    <view class="fjhouse">附近房源</view>
+    <view style="position: relative;z-index:1">
+      <house-list houseDataList="{{houseDataList}}"></house-list>
+    </view>
+  </view>
+  <view onAppear="setCanPullDown" class="setCanPullDown"> </view>
+</view>

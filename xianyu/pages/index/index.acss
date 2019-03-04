@@ -1,0 +1,123 @@
+page{
+    background:#ffffff;
+
+  }
+  .index{
+    width:750rpx;
+  }
+  .search-fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    background:#fff;
+    width:750rpx;
+    z-index:300
+  }
+  .search-area{
+    margin:20rpx 20rpx 20rpx;
+    padding:0 20rpx;
+    display: flex;
+    align-items: center;
+    z-index:100
+  }
+  .city-position{
+    display: block;
+    width:150rpx;
+    font-size:34rpx;
+    color:#333;
+    position: relative;
+  }
+  .city-position::before{
+    content:'';
+    position: absolute;
+    top:13rpx;
+    right:25rpx;
+    width:0;
+    height:0;
+    overflow: hidden;
+    border-width:7rpx;
+    border-style: solid;
+    border-color:transparent transparent #333 #333;
+    transform: rotate(-45deg);
+  }
+  .search{
+    display: block;
+    box-sizing: border-box;
+    font-size:28rpx;
+    font-weight: 300;
+    color:#999;
+    width:520rpx;
+    height:68rpx;
+    background:#f7f7f7;
+    border-radius: 40rpx;
+    line-height: 68rpx;
+    padding-left:30rpx;
+    display: flex;
+    align-items: center ;
+  }
+  .search image{
+    margin-right:26rpx;
+    width:29rpx;
+    height:30rpx;
+  }
+  .house-icon{
+    display: flex;
+    justify-content:space-around;
+  }
+  .fjhouse{
+    font-size:40rpx;
+    font-weight: bold;
+    color:#333;
+  }
+  .house-icon view{
+    text-align: center;
+    font-size:22rpx;
+    line-height: 23rpx;
+    color:#333
+  }
+  .house-icon-img{
+    width:108rpx;
+    height:108rpx;
+  }
+  .searchArea{
+    padding:20rpx 0;
+    margin:0 -20rpx;
+    position: relative;
+    z-index:200;
+    border-bottom:thin solid #ddd;
+  }
+  .lookHouse{
+    margin:60rpx 30rpx 40rpx; 
+    display: flex;
+    justify-content: space-around
+  }
+  .lookHouse .lhlist{
+    width:326rpx;
+    height:144rpx;
+    display: block;
+    border-radius:10rpx;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .lookHouse .lhlist image{
+    display: block;
+    width:324rpx;
+    height:144rpx;
+  }
+  /* .lookHouse .lhlist .tips{
+    font-size:20rpx;
+    color:#999;
+    margin-top:10rpx;
+  }
+  .lookHouse .lhlist view{
+    flex:1;
+  } */
+  .houseData{
+    margin:0 40rpx;
+    font-size:30rpx;
+  }
+  .setCanPullDown{
+    height:20rpx
+  }

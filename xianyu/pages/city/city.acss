@@ -1,0 +1,26 @@
+.city{
+    margin:0 0 20rpx 20rpx;
+    font-size:30rpx;
+    padding-top:50rpx;
+}
+.citylist{
+    margin:20rpx 0;
+    flex-wrap: wrap;
+    display: flex;
+}
+.citylist view{
+    display: block;
+    border:thin solid #ddd;
+    width:216rpx;
+    height:72rpx;
+    text-align: center;
+    line-height: 72rpx;
+    border-radius:10rpx;
+    margin-right:20rpx;
+    margin-bottom:20rpx;
+    font-size:28rpx;
+}
+.citylist view.hover{
+   border-color:#FF8C07;
+   color:#FF8C07
+}

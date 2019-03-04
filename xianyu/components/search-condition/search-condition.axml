@@ -1,0 +1,73 @@
+<view class="search">
+    <view class="search-condition">
+        <view class="condition" 
+        a:for="{{selectOptions}}" 
+        data-index="{{index}}" 
+        data-obj="{{item.obj}}" 
+        data-text="{{item.text}}"
+        onTap="handelCurSelect">
+            <view a:if="{{!item.src}}" class="contType">
+                <view class="{{selectOptions[index].active ? 'textHover': ''}}">{{item.text}}</view>
+                <view class="{{showPopupObj[index] ? 'icon iconHover' : 'icon'}}"></view>
+            </view>
+            <view a:if="{{item.src}}">
+                <image src="{{item.src}}"/>
+            </view>
+        </view>  
+    </view>
+    <!-- <block a:if="{{showPopupObj[0]}}">
+        <view class="select-area select-city">
+            <view class="block">
+                <view onTap="changeRegion" class="{{item.checked ? 'activeBg':''}}" data-index="{{index}}" data-id="{{item.id}}" a:for="{{districtList}}">{{item.name}}</view>
+            </view>
+            <view class="block">
+                <view a:for="{{zones}}" data-zoneId="{{item.zoneId}}"  data-index="{{index}}"  onTap="changeRentType"  class="{{item.active?'activeBg':''}}" data-obj="{{item}}">{{item.zoneName}}</view>
+            </view>
+        </view>
+    </block>-->
+</view>
+ <popup show="{{showPopupObj[0]}}" onClose="onPopupClose" position="top" className="pouStyle" animation="{{true}}" zIndex="200" disableScroll="{{false}}">
+    <view class="select-area select-city">
+        <view class="block">
+            <view onTap="changeRegion" class="{{item.checked ? 'activeBg':''}}" data-index="{{index}}" data-id="{{item.id}}" data-name = "{{item.name}}" a:for="{{districtList}}" >{{item.name}}</view>
+        </view>
+        <view class="block" disable-scroll="{{zones.length<=6}}">
+            <view a:for="{{zones}}" data-zoneId="{{item.zoneId}}"  data-index="{{index}}"  onTap="changeRentType"  class="{{item.active?'activeBg':''}}" data-obj="{{item}}">{{item.zoneName}}</view>
+        </view>
+    </view>
+</popup>
+<popup show="{{showPopupObj[1]}}" onClose="onPopupClose" position="top" className="pouStyle" animation="{{true}}">
+    <view class="select-area">
+        <view a:for="{{rentTypeList}}" onTap="changeRentType" data-index="{{index}}" data-val="{{item.val}}" class="{{item.active?'activeBg':''}}">{{item.text}}</view>
+    </view>
+</popup>
+    <popup show="{{showPopupObj[2]}}" onClose="onPopupClose" position="top" className="pouStyle" animation="{{true}}">
+        <view class="select-area" >
+        <view a:for="{{priceList}}" onTap="changeRentType" data-index="{{index}}" data-val="{{item.val}}" class="{{item.active?'activeBg':''}}">{{item.text}}</view>
+    </view>
+</popup>
+<popup show="{{showPopupObj[3]}}" onClose="onPopupClose" position="top" className="pouStyle" animation="{{true}}">
+    <view class="select-more" >
+        <view class="more-title">精装</view>
+        <view class="item">
+            <view a:for="{{decorationList}}" class="{{item.checked?'itembg':''}}"  data-index="{{index}}" data-obj="decorationList" onTap="handleMore">{{item.text}}</view>
+        </view>
+        <view class="more-title">卧室</view>
+        <view class="item">
+            <view a:for="{{chamberList}}" class="{{item.checked?'itembg':''}}" data-index="{{index}}" data-obj="chamberList"  onTap="handleMore">{{item.text}}</view>
+        </view>
+        <view class="more-title">卫生间</view>
+        <view class="item">
+            <view a:for="{{toiletList}}" class="{{item.checked?'itembg':''}}" data-index="{{index}}" data-obj="toiletList"  onTap="handleMore" >{{item.text}}</view>
+        </view>
+        <view class="moreInfo-checkBtn">
+            <button class="f-btn" onTap="handleRestBtn">重置</button>
+            <button class="s-btn" onTap="handleSureBtn">确定</button>
+        </view>
+    </view>
+</popup>
+<popup show="{{showPopupObj[4]}}" onClose="onPopupClose" position="top" className="pouStyle" animation="{{true}}">
+    <view class="select-area" >
+        <view a:for="{{filterList}}" onTap="changeRentType" data-index="{{index}}" data-val="{{item.val}}" class="{{item.active?'activeBg':''}}">{{item.text}}</view>
+    </view>
+</popup>

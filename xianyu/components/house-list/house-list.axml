@@ -1,0 +1,22 @@
+<view class="house-list">
+    <view class="listmodule" a:for="{{houseDataList}}" data-mainId="{{item.mainId}}" data-type="{{item.type}}" onTap="handleToDetail">
+        <view class="listImg">
+            <image src="{{item.imageUrl}}"></image>
+        </view>
+        <view class="houseDes">
+            <view class="title">{{item.name}}</view>
+            <view class="type">{{item.houseArea}} | {{item.houseType}} | {{item.decorationDegree}}</view>
+            <view class="position">
+                <image src="/images/weizhi@2x.png"/>
+                <view>{{item.address}}</view>
+            </view>
+            <view class="tagIcon">
+                <view a:for="{{item.showIconList}}"></view>
+                <!-- <view class="tagName" a:for="{{item.showTagList}}" a:for-item="tagItem">
+                    {{tagItem.tagName}}
+                </view> -->
+            </view>
+            <view class="price">￥{{item.minRentPrice}}/月</view>
+        </view>
+    </view>
+</view>

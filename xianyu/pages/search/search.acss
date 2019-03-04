@@ -1,0 +1,79 @@
+page{
+  background:#fff;
+}
+.index{
+  width:100%;
+}
+.search-area{
+  margin:20rpx 20rpx 0;
+  padding:0 20rpx;
+  width:90%;
+  display: flex;
+  align-items: center;
+}
+.search{
+  display: block;
+  width:80%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background:#f5f5f5;
+  border-radius:40rpx;
+  padding-left:10rpx;
+}
+.searchBtn{
+  font-size:12px;
+  width:20%;
+  color:#333;
+}
+.search image{
+  display: block;
+  width:28rpx;
+  height:28rpx;
+  margin-right:16rpx;
+  margin-left:10rpx;
+}
+.search input {
+  font-size: 28rpx;
+  /* padding: 20rpx; */
+  height:68rpx;
+  line-height:68rpx;
+  box-sizing: border-box;
+  display: block;
+  /* height:100%; */
+  border:none;
+  flex:1;
+  color:#999;
+  background:#f5f5f5;
+  border-radius:40rpx;
+}
+.searchArea{
+  padding:10rpx 0 20rpx;
+  margin:0 20rpx;
+  position: relative;
+  z-index:200;
+  border-bottom:thin solid #ddd;
+}
+.houseData{
+  margin:120rpx 20rpx 0;
+  font-size:30rpx;
+}
+.top-fixed{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#fff;
+  z-index:100;
+  padding-bottom:10rpx;
+}
+.tips{
+  padding-top:100rpx;
+  font-size:12px;
+  color:#ddd;
+  text-align: center;
+}
+.setCanPullDown{
+  height:20rpx;
+}

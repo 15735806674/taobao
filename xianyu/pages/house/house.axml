@@ -1,0 +1,28 @@
+<view class="index">
+      <view class="search-key">
+        <view class='toSearch'>
+          <view class="flex">
+              <image src="/images/fdj@2x.png"/>
+              <input
+              placeholder="搜索你想住的区域或者小区?"
+              value=""
+              onBlur="onBlur"/>
+            </view>
+            <button class="searchBtn" @click="searchData">搜索</button>
+        </view>
+      </view>
+      <view class="searchArea">
+        <search-condition defalutData="{{searchDefault}}" onChangeData="onChangeData"></search-condition>
+      </view>
+
+      <view class="houseData">
+        <view style="height:140rpx;"></view>
+        <view>
+          <house-list houseDataList="{{houseDataList}}"></house-list>
+          <view a:if="{{houseDatafalse}}" class="tips">
+              暂无数据
+          </view>
+        </view>
+        <view onAppear="setCanPullDown" class="setCanPullDown"></view>
+      </view>
+  </view>

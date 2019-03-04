@@ -1,0 +1,3 @@
+<template>
+    <web-view src="{{url}}" onMessage="onmessage"></web-view>
+</template>

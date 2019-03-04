@@ -1,0 +1,17 @@
+{
+    "usingComponents": {
+        "city-page": "/components/city-page/city-page",
+        "search-condition":"/components/search-condition/search-condition",
+        "house-list":"/components/house-list/house-list"
+    },
+    "window": {
+        "defaultTitle": "麦邻租房",
+        "navigationBarForceEnable": true,
+        "translucent": false,
+        "navigationBarTitleText": "麦邻租房",
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#f0f0f0",
+        "allowsBounceVertical": "NO"
+    },
+    "navigationBarTitleText": "麦邻租房"
+}

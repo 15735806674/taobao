@@ -1,0 +1,8 @@
+{
+  "name": "xianyu3",
+  "version": "0.0.31",
+  "description": "miniapp for taobao",
+  "dependencies": {
+    "mini-antui": "^0.4.15"
+  }
+}

@@ -1,0 +1,8 @@
+<view class="city">
+    当前开通城市
+    <view class="citylist" >
+        <view  a:for="{{cityData}}" data-id="{{item.cityId}}" data-name="{{item.cityName}}" onTap="changeCity">
+        {{item.cityName}}
+        </view>
+    </view>
+</view>

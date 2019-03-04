@@ -1,0 +1,9 @@
+<view class="city">
+    当前开通城市
+    <view class="citylist" >
+            <!-- class="{{ite.active ? 'hover':''}}" -->
+        <view  a:for="{{cityList}}" data-id="{{item.cityId}}" data-name="{{item.cityName}}" onTap="handleCityToIndex"  class="{{item.active ? 'hover':''}}">
+        {{item.cityName}}
+        </view>
+    </view>
+</view>

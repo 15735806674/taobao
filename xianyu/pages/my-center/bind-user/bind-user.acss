@@ -1,0 +1,39 @@
+.bind-user{
+    padding:20rpx 60rpx;
+    font-size:32rpx;
+    width:100%;
+}
+.input-phone{
+    padding:10rpx;
+    box-sizing: border-box;
+    margin-top:100rpx;
+    width:100%;
+    border-bottom:thin solid #ddd;
+    display: flex;
+    justify-content: space-between
+}
+.input-phone input{
+    flex:1;
+}
+.input-phone .get-code{
+    display: block;
+    /* border:thin solid #ddd; */
+    padding:10rpx 30rpx;
+    border-radius: 10rpx;
+    font-size:12px;
+    background:#FF8C07;
+    color:#fff;
+}
+.input-code{
+    padding:10rpx;
+    box-sizing: border-box;
+    margin-top:40rpx;
+    width:100%;
+    border-bottom:thin solid #ddd;
+}
+.submit-btn{
+    display: block;
+    margin-top:100rpx;
+    background:#FF8C07;
+    color:#fff;
+}

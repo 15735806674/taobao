@@ -1,0 +1,16 @@
+
+<view class="my-center">
+    <view class="account">
+        <!-- <image class="image" src="{{avatar}}"></image> -->
+        <image class="image" src="/images/tx.png"/>
+        <view class="name">
+            <!-- <view>{{nickName}}</view> -->
+            <view>麦邻租房</view>
+            <!-- <view onTap="bindUser">账号绑定</view> -->
+        </view>
+    </view>
+    <view class="accout-link">
+        <!-- <view onTap="billPay"><image src="/images/zuyue1@2x.png" />账单支付</view> -->
+        <view onTap="leaseManage"><image src="/images/zuyue1@2x.png" />租约管理</view>
+    </view>
+</view>

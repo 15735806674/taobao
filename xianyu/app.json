@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/house/house",
+    "pages/my-center/my-center",
+    "pages/my-center/bind-user/bind-user",
+    "pages/city/city",
+    "pages/webview/webview",
+    "pages/my-center/zyManage/zyManage"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#f0f0f0",
+    "defaultTitle": "麦邻租房",
+    "backgroundTextStyle": "dark",
+    "allowsBounceVertical": "NO"
+  },
+  "tabBar": {
+    "textColor": "#C5C5C5",
+    "selectedColor": "#1E2087",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon":"/images/shouye-1@2x.png",
+        "activeIcon":"/images/shouye-2@2x.png"
+      },
+      {
+        "pagePath":"pages/my-center/my-center",
+        "name": "我的",
+        "icon":"/images/wode_1@2x.png",
+        "activeIcon":"/images/wode_2@2x.png"
+      }
+    ]
+  }
+}

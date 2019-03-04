@@ -1,0 +1,11 @@
+{
+    "window": {
+        "defaultTitle": "麦邻租房",
+        "navigationBarForceEnable": true,
+        "translucent": false,
+        "navigationBarTitleText": "麦邻租房",
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#f0f0f0"
+    },
+    "navigationBarTitleText": "麦邻租房"
+}

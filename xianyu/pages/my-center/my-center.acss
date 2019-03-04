@@ -1,0 +1,68 @@
+
+.my-center{
+  width:100%;
+}
+.account{
+  padding:80rpx 60rpx 60rpx;
+  box-sizing: border-box;
+  display: flex;
+  width:100%;
+  overflow: hidden;
+  /* height:156rpx; */
+}
+.account .image {
+  background-color: #eeeeee;
+  width:156rpx;
+  height:156rpx;
+  margin-right:30rpx;
+  border-radius:50%;
+}
+.account .name{
+  font-size:44rpx;
+  color:#333;
+  height:156rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.account .name view:last-child{
+  font-size:28rpx;
+  color:#999;
+}
+.accout-link{
+  margin-left:60rpx;
+  font-size:26rpx;
+  border-top:thin solid #ddd;
+}
+.accout-link view{
+  height:80rpx;
+  line-height:80rpx;
+  height:120rpx;
+  line-height: 120rpx;
+  font-size:32rpx;
+  color:#333;
+  border-bottom:thin solid #ddd;
+  position: relative;
+  vertical-align: middle;
+}
+.accout-link *{
+ vertical-align: middle;
+}
+.accout-link view image{
+ width:32rpx;
+ height:36rpx;
+ margin-right:30rpx;
+ margin-top:-7rpx;
+ margin-left:20rpx;
+}
+.accout-link view::before{
+   content:'';
+   position: absolute;
+   right:30rpx;
+   top:45%;
+   width:15rpx;
+   height:15rpx;
+   border:2rpx solid #bbb;
+   border-width: 0 2rpx 2rpx 0;
+   transform: rotate(-45deg);
+}
